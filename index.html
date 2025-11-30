@@ -55,7 +55,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            cursor: none; /* Custom cursor */
+            cursor: auto; /* Custom cursor */
         }
 
         html {
@@ -89,37 +89,6 @@
             background: linear-gradient(90deg, var(--accent-cyan), var(--accent-pink));
             z-index: 9999;
             transition: width 0.1s;
-        }
-
-        /* Custom Cursor */
-        .cursor-dot, .cursor-outline {
-            position: fixed;
-            top: 0;
-            left: 0;
-            transform: translate(-50%, -50%);
-            border-radius: 50%;
-            z-index: 9999;
-            pointer-events: none;
-        }
-
-        .cursor-dot {
-            width: 8px;
-            height: 8px;
-            background-color: var(--accent-cyan);
-        }
-
-        .cursor-outline {
-            width: 40px;
-            height: 40px;
-            border: 1px solid var(--accent-cyan);
-            transition: width 0.2s, height 0.2s, background-color 0.2s;
-        }
-
-        body.hovering .cursor-outline {
-            width: 60px;
-            height: 60px;
-            background-color: rgba(0, 194, 255, 0.1);
-            border-color: var(--accent-pink);
         }
         
         /* Intro Overlay */
@@ -1249,10 +1218,6 @@
         </div>
     </div>
 
-    <!-- Custom Cursor -->
-    <div class="cursor-dot"></div>
-    <div class="cursor-outline"></div>
-
     <!-- Scroll Progress -->
     <div id="scroll-progress"></div>
 
@@ -2031,7 +1996,7 @@
             <div class="game-card">
                 <div class="game-image">
                     <a href="https://studio.code.org/projects/gamelab/N5pfTHHM9EeCXq8dtI1h0ePoKUZoE_dBfbpmiIRKXIs">
-                        <img src="Icons/2nd.JPG" alt="Carrom Board Game">
+                        <img src="Icons/2nd.jpg" alt="Carrom Board Game">
                     </a>
                 </div>
                 <div class="game-content">
@@ -2045,7 +2010,7 @@
             <div class="game-card">
                 <div class="game-image">
                     <a href="https://studio.code.org/projects/gamelab/nNN1RwCGoUCBzAp-9XMxPA0MsCaLYhz-itkFZRjbMFQ">
-                        <img src="Icons/3rd.JPG" alt="Bouncy Ball Mini-Game">
+                        <img src="Icons/3rd.jpg" alt="Bouncy Ball Mini-Game">
                     </a>
                 </div>
                 <div class="game-content">
@@ -2060,7 +2025,7 @@
             <div class="game-card">
                 <div class="game-image">
                     <a href="https://studio.code.org/projects/gamelab/ezqAg_FqCSiXCK8fFDG7xqIHiaquxWZTxw5E7yhDCGE">
-                        <img src="Icons/4th.JPG" alt="Vegetable Harvest">
+                        <img src="Icons/4th.jpg" alt="Vegetable Harvest">
                     </a>
                 </div>
                 <div class="game-content">
@@ -2074,7 +2039,7 @@
             <div class="game-card">
                 <div class="game-image">
                     <a href="https://studio.code.org/projects/gamelab/qbdnWNCLsxm7cS1ZzLeCqDoijQY0MaqZ0VEcvWXiH2g">
-                        <img src="Icons/5th.JPG" alt="Carrom vs Sensor Robot">
+                        <img src="Icons/5th.jpg" alt="Carrom vs Sensor Robot">
                     </a>
                 </div>
                 <div class="game-content">
@@ -2088,7 +2053,7 @@
             <div class="game-card">
                 <div class="game-image">
                     <a href="https://studio.code.org/projects/gamelab/SsHAo56YxUQnfhnbAJAnvLRBscBegsfgZ5fF8DMuFAc">
-                        <img src="Icons/6th.JPG" alt="Custom Story Game">
+                        <img src="Icons/6th.jpg" alt="Custom Story Game">
                     </a>
                 </div>
                 <div class="game-content">
@@ -2110,7 +2075,7 @@
             <div class="game-card">
                 <div class="game-image">
                     <a href="https://studio.code.org/projects/gamelab/Fb3kmeTvqe0sLuj0bPe8eae3A0TVDU9ZosJ3J4a4a_Y">
-                        <img src="Icons/7th.JPG" alt="Arrow Balloon Burst">
+                        <img src="Icons/7th.jpg" alt="Arrow Balloon Burst">
                     </a>
                 </div>
                 <div class="game-content">
@@ -2124,7 +2089,7 @@
             <div class="game-card">
                 <div class="game-image">
                     <a href="https://studio.code.org/projects/gamelab/T55iO46GYxCVIIlXwLcZSrEU1qpDKcYDOI3FsgK1FXI">
-                        <img src="Icons/8th.JPG" alt="Fruit Ninja Enhanced">
+                        <img src="Icons/8th.jpg" alt="Fruit Ninja Enhanced">
                     </a>
                 </div>
                 <div class="game-content">
@@ -2138,7 +2103,7 @@
             <div class="game-card">
                 <div class="game-image">
                     <a href="https://editor.p5js.org/goyalaryan85/full/lnEIH-cXl">
-                        <img src="Icons/9th.JPG" alt="Banana Monkey Collector">
+                        <img src="Icons/9th.jpg" alt="Banana Monkey Collector">
                     </a>
                 </div>
                 <div class="game-content">
@@ -2152,7 +2117,7 @@
             <div class="game-card">
                 <div class="game-image">
                     <a href="https://editor.p5js.org/goyalaryan85/full/-DHq_xIPS">
-                        <img src="Icons/10th.JPG" alt="Virtual Squash Game">
+                        <img src="Icons/10th.jpg" alt="Virtual Squash Game">
                     </a>
                 </div>
                 <div class="game-content">
@@ -2166,7 +2131,7 @@
             <div class="game-card">
                 <div class="game-image">
                     <a href="https://aryan16022.github.io/TOM-CATCHES-JERRY/">
-                        <img src="Icons/11th.JPG" alt="Tom & Jerry Collision Game">
+                        <img src="Icons/11th.jpg" alt="Tom & Jerry Collision Game">
                     </a>
                 </div>
                 <div class="game-content">
@@ -2180,7 +2145,7 @@
             <div class="game-card">
                 <div class="game-image">
                     <a href="https://aryan16022.github.io/GCSO/">
-                        <img src="Icons/12th.JPG" alt="Car Crash Safety Simulator">
+                        <img src="Icons/12th.jpg" alt="Car Crash Safety Simulator">
                     </a>
                 </div>
                 <div class="game-content">
@@ -2194,7 +2159,7 @@
             <div class="game-card">
                 <div class="game-image">
                     <a href="https://aryan16022.github.io/CAN-THE-BULLET-DAMAGE-A-WALL-/">
-                        <img src="Icons/13th.JPG" alt="Bullet Wall Reliability Test">
+                        <img src="Icons/13th.jpg" alt="Bullet Wall Reliability Test">
                     </a>
                 </div>
                 <div class="game-content">
@@ -2208,7 +2173,7 @@
             <div class="game-card">
                 <div class="game-image">
                     <a href="https://aryan16022.github.io/SUPPLY-MISSION-C23/">
-                        <img src="Icons/14th.JPG" alt="Package Drop Mission">
+                        <img src="Icons/14th.jpg" alt="Package Drop Mission">
                     </a>
                 </div>
                 <div class="game-content">
@@ -2222,7 +2187,7 @@
             <div class="game-card">
                 <div class="game-image">
                     <a href="https://aryan16022.github.io/CRUMPLED-BALLS/">
-                        <img src="Icons/15th.JPG" alt="Trash Can Ball Challenge">
+                        <img src="Icons/15th.jpg" alt="Trash Can Ball Challenge">
                     </a>
                 </div>
                 <div class="game-content">
@@ -2236,7 +2201,7 @@
             <div class="game-card">
                 <div class="game-image">
                     <a href="https://aryan16022.github.io/project-27/">
-                        <img src="Icons/16th.JPG" alt="Newton's Cradle Demo">
+                        <img src="Icons/16th.jpg" alt="Newton's Cradle Demo">
                     </a>
                 </div>
                 <div class="game-content">
@@ -2250,7 +2215,7 @@
             <div class="game-card">
                 <div class="game-image">
                     <a href="https://aryan16022.github.io/PLINKO-WITH-SCORES/">
-                        <img src="Icons/17th.JPG" alt="Plinko with Live Scoring">
+                        <img src="Icons/17th.jpg" alt="Plinko with Live Scoring">
                     </a>
                 </div>
                 <div class="game-content">
@@ -2264,7 +2229,7 @@
             <div class="game-card">
                 <div class="game-image">
                     <a href="https://aryan16022.github.io/PROJECT-28-PLUCKING-THE-MANGOES-/">
-                        <img src="Icons/18th.JPG" alt="Mango Plucker">
+                        <img src="Icons/18th.jpg" alt="Mango Plucker">
                     </a>
                 </div>
                 <div class="game-content">
@@ -2278,7 +2243,7 @@
             <div class="game-card">
                 <div class="game-image">
                     <a href="https://aryan16022.github.io/PROJECT-34-KILL-THE-MONSTER-/">
-                        <img src="Icons/19th.JPG" alt="Superhero vs Monster">
+                        <img src="Icons/19th.jpg" alt="Superhero vs Monster">
                     </a>
                 </div>
                 <div class="game-content">
@@ -2292,7 +2257,7 @@
             <div class="game-card">
                 <div class="game-image">
                     <a href="https://aryan16022.github.io/PROJECT-37-MY-QUIZ-2-/">
-                        <img src="Icons/20th.JPG" alt="Multiplayer Quiz">
+                        <img src="Icons/20th.jpg" alt="Multiplayer Quiz">
                     </a>
                 </div>
                 <div class="game-content">
@@ -2306,7 +2271,7 @@
             <div class="game-card">
                 <div class="game-image">
                     <a href="https://aryan16022.github.io/Project-39-KANGAROO-IN-JUNGLE-2-/">
-                        <img src="Icons/21st.JPG" alt="Hungry Kangaroo Complete">
+                        <img src="Icons/21st.jpg" alt="Hungry Kangaroo Complete">
                     </a>
                 </div>
                 <div class="game-content">
@@ -2320,7 +2285,7 @@
             <div class="game-card">
                 <div class="game-image">
                     <a href="https://aryan16022.github.io/project-42-shooting-range-/">
-                        <img src="Icons/22nd.JPG" alt="Virtual Rifle Range">
+                        <img src="Icons/22nd.jpg" alt="Virtual Rifle Range">
                     </a>
                 </div>
                 <div class="game-content">
@@ -2334,7 +2299,7 @@
             <div class="game-card">
                 <div class="game-image">
                     <a href="https://aryan16022.github.io/PROJECT-43-TREASURE-HUNT-/">
-                        <img src="Icons/23rd.JPG" alt="Treasure Cave Guardian">
+                        <img src="Icons/23rd.jpg" alt="Treasure Cave Guardian">
                     </a>
                 </div>
                 <div class="game-content">
@@ -2348,7 +2313,7 @@
             <div class="game-card">
                 <div class="game-image">
                     <a href="https://aryan16022.github.io/SAVE-THE-CASTLE/">
-                        <img src="Icons/24th.JPG" alt="Final Release Showcase">
+                        <img src="Icons/24th.jpg" alt="Final Release Showcase">
                     </a>
                 </div>
                 <div class="game-content">
@@ -2461,123 +2426,123 @@
     <div class="gallery-container">
         <div class="gallery-grid">
             <div class="gallery-item gallery-item-1" onclick="openLightbox(0)">
-                <img src="p1.png" alt="Portfolio Image 1">
+                <img src="photos/p1.png" alt="Portfolio Image 1">
                 <div class="gallery-overlay"></div>
             </div>
             <div class="gallery-item gallery-item-2" onclick="openLightbox(1)">
-                <img src="p2.png" alt="Portfolio Image 2">
+                <img src="photos/p2.png" alt="Portfolio Image 2">
                 <div class="gallery-overlay"></div>
             </div>
             <div class="gallery-item gallery-item-3" onclick="openLightbox(2)">
-                <img src="p3.png" alt="Portfolio Image 3">
+                <img src="photos/p3.png" alt="Portfolio Image 3">
                 <div class="gallery-overlay"></div>
             </div>
             <div class="gallery-item gallery-item-4" onclick="openLightbox(3)">
-                <img src="p4.png" alt="Portfolio Image 4">
+                <img src="photos/p4.png" alt="Portfolio Image 4">
                 <div class="gallery-overlay"></div>
             </div>
             <div class="gallery-item gallery-item-5" onclick="openLightbox(4)">
-                <img src="p5.png" alt="Portfolio Image 5">
+                <img src="photos/p5.png" alt="Portfolio Image 5">
                 <div class="gallery-overlay"></div>
             </div>
             <div class="gallery-item gallery-item-6" onclick="openLightbox(5)">
-                <img src="p6.png" alt="Portfolio Image 6">
+                <img src="photos/p6.png" alt="Portfolio Image 6">
                 <div class="gallery-overlay"></div>
             </div>
             <div class="gallery-item gallery-item-7" onclick="openLightbox(6)">
-                <img src="p7.png" alt="Portfolio Image 7">
+                <img src="photos/p7.png" alt="Portfolio Image 7">
                 <div class="gallery-overlay"></div>
             </div>
             <div class="gallery-item gallery-item-8" onclick="openLightbox(7)">
-                <img src="p8.png" alt="Portfolio Image 8">
+                <img src="photos/p8.png" alt="Portfolio Image 8">
                 <div class="gallery-overlay"></div>
             </div>
             <div class="gallery-item gallery-item-9" onclick="openLightbox(8)">
-                <img src="p9.png" alt="Portfolio Image 9">
+                <img src="photos/p9.png" alt="Portfolio Image 9">
                 <div class="gallery-overlay"></div>
             </div>
             <div class="gallery-item gallery-item-10" onclick="openLightbox(9)">
-                <img src="p10.png" alt="Portfolio Image 10">
+                <img src="photos/p10.png" alt="Portfolio Image 10">
                 <div class="gallery-overlay"></div>
             </div>
             <div class="gallery-item gallery-item-11" onclick="openLightbox(10)">
-                <img src="p11.png" alt="Portfolio Image 11">
+                <img src="photos/p11.png" alt="Portfolio Image 11">
                 <div class="gallery-overlay"></div>
             </div>
             <div class="gallery-item gallery-item-12" onclick="openLightbox(11)">
-                <img src="p12.png" alt="Portfolio Image 12">
+                <img src="photos/p12.png" alt="Portfolio Image 12">
                 <div class="gallery-overlay"></div>
             </div>
             <div class="gallery-item gallery-item-13" onclick="openLightbox(12)">
-                <img src="p13.png" alt="Portfolio Image 13">
+                <img src="photos/p13.png" alt="Portfolio Image 13">
                 <div class="gallery-overlay"></div>
             </div>
             <div class="gallery-item gallery-item-14" onclick="openLightbox(13)">
-                <img src="p14.png" alt="Portfolio Image 14">
+                <img src="photos/p14.png" alt="Portfolio Image 14">
                 <div class="gallery-overlay"></div>
             </div>
             <div class="gallery-item gallery-item-15" onclick="openLightbox(14)">
-                <img src="p15.png" alt="Portfolio Image 15">
+                <img src="photos/p15.png" alt="Portfolio Image 15">
                 <div class="gallery-overlay"></div>
             </div>
             <div class="gallery-item gallery-item-16" onclick="openLightbox(15)">
-                <img src="p16.png" alt="Portfolio Image 16">
+                <img src="photos/p16.png" alt="Portfolio Image 16">
                 <div class="gallery-overlay"></div>
             </div>
             <div class="gallery-item gallery-item-17" onclick="openLightbox(16)">
-                <img src="p17.png" alt="Portfolio Image 17">
+                <img src="photos/p17.png" alt="Portfolio Image 17">
                 <div class="gallery-overlay"></div>
             </div>
             <div class="gallery-item gallery-item-18" onclick="openLightbox(17)">
-                <img src="p18.png" alt="Portfolio Image 18">
+                <img src="photos/p18.png" alt="Portfolio Image 18">
                 <div class="gallery-overlay"></div>
             </div>
             <div class="gallery-item gallery-item-19" onclick="openLightbox(18)">
-                <img src="p19.png" alt="Portfolio Image 19">
+                <img src="photos/p19.png" alt="Portfolio Image 19">
                 <div class="gallery-overlay"></div>
             </div>
             <div class="gallery-item gallery-item-20" onclick="openLightbox(19)">
-                <img src="p20.png" alt="Portfolio Image 20">
+                <img src="photos/p20.png" alt="Portfolio Image 20">
                 <div class="gallery-overlay"></div>
             </div>
             <div class="gallery-item gallery-item-21" onclick="openLightbox(20)">
-                <img src="p21.png" alt="Portfolio Image 21">
+                <img src="photos/p21.png" alt="Portfolio Image 21">
                 <div class="gallery-overlay"></div>
             </div>
             <div class="gallery-item gallery-item-22" onclick="openLightbox(21)">
-                <img src="p22.png" alt="Portfolio Image 22">
+                <img src="photos/p22.png" alt="Portfolio Image 22">
                 <div class="gallery-overlay"></div>
             </div>
             <div class="gallery-item gallery-item-23" onclick="openLightbox(22)">
-                <img src="p23.png" alt="Portfolio Image 23">
+                <img src="photos/p23.png" alt="Portfolio Image 23">
                 <div class="gallery-overlay"></div>
             </div>
             <div class="gallery-item gallery-item-24" onclick="openLightbox(23)">
-                <img src="p24.png" alt="Portfolio Image 24">
+                <img src="photos/p24.png" alt="Portfolio Image 24">
                 <div class="gallery-overlay"></div>
             </div>
             <div class="gallery-item gallery-item-25" onclick="openLightbox(24)">
-                <img src="p25.png" alt="Portfolio Image 25">
+                <img src="photos/p25.png" alt="Portfolio Image 25">
                 <div class="gallery-overlay"></div>
             </div>
             <div class="gallery-item gallery-item-26" onclick="openLightbox(25)">
-                <img src="p26.png" alt="Portfolio Image 26">
+                <img src="photos/p26.png" alt="Portfolio Image 26">
                 <div class="gallery-overlay"></div>
             </div>
             <div class="gallery-item gallery-item-27" onclick="openLightbox(26)">
-                <img src="p27.png" alt="Portfolio Image 27">
+                <img src="photos/p27.png" alt="Portfolio Image 27">
                 <div class="gallery-overlay"></div>
             </div>
             <div class="gallery-item gallery-item-28" onclick="openLightbox(27)">
-                <img src="p28.png" alt="Portfolio Image 28">
+                <img src="photos/p28.png" alt="Portfolio Image 28">
                 <div class="gallery-overlay"></div>
             </div>
             <div class="gallery-item gallery-item-29" onclick="openLightbox(28)">
-                <img src="p29.png" alt="Portfolio Image 29">
+                <img src="photos/p29.png" alt="Portfolio Image 29">
                 <div class="gallery-overlay"></div>
             </div>
             <div class="gallery-item gallery-item-29" onclick="openLightbox(28)">
-                <img src="p31.png" alt="Portfolio Image 29">
+                <img src="photos/p31.png" alt="Portfolio Image 29">
                 <div class="gallery-overlay"></div>
             </div>
             
