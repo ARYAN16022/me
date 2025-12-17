@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -346,7 +346,7 @@
             background: var(--card-bg);
             border: var(--glass-border);
             border-radius: 20px;
-            cursor: none;
+            cursor: pointer;
             z-index: 1000;
             display: flex;
             align-items: center;
@@ -1205,15 +1205,8 @@
         <div class="bg bg3"></div>
         <div class="intro-container">
             <div class="intro-content">
-                <h1 class="intro-title">SECURE CONNECTION</h1>
-                <p class="intro-text">Establishing link to Aryan's Portfolio...</p>
-                <div class="verify-box">
-                    <div style="width: 20px; height: 20px; border: 2px solid var(--accent-cyan); border-radius: 4px; display: flex; align-items:center; justify-content:center;">
-                        <div id="check-mark" style="width: 10px; height: 10px; background: var(--accent-cyan); display: none;"></div>
-                    </div>
-                    <span>ESTABLISH CONNECTION</span>
-                    <button id="verify-btn" class="verify-btn">INITIALIZE LINK</button>
-                </div>
+                <h1 class="intro-title">WELCOME TO MY PORTFOLIO</h1>
+                <p class="intro-text">Loading your experience...</p>
             </div>
         </div>
     </div>
@@ -2927,23 +2920,17 @@ document.addEventListener('keydown', (e) => {
         });
 
         // --- VERIFY HUMAN ---
-        const verifyBtn = document.getElementById('verify-btn');
+        // const verifyBtn = document.getElementById('verify-btn');
         const checkMark = document.getElementById('check-mark');
         const introOverlay = document.getElementById('intro-overlay');
         const typewriterText = document.getElementById('typewriter-text');
 
-        verifyBtn.addEventListener('click', () => {
-            verifyBtn.textContent = "VERIFYING...";
-            setTimeout(() => {
-                checkMark.style.display = 'block';
-                verifyBtn.textContent = "ACCESS GRANTED";
-                verifyBtn.style.background = "#00c2ff";
-                setTimeout(() => {
-                    introOverlay.classList.add('slide-up');
-                    setTimeout(startTypewriter, 500);
-                }, 800);
-            }, 1000);
-        });
+        setTimeout(() => {
+    introOverlay.classList.add('slide-up');
+    setTimeout(() => {
+        introOverlay.style.display = 'none';
+    }, 800);
+}, 2500);
 
         // --- TYPEWRITER ---
         function startTypewriter() {
